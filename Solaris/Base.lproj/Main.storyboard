@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ramp PlacerVC-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="RampPlacerVC" customModule="Solaris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4xl-ii-AkG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQj-m5-vNI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGT-6d-M6r">
+                                <rect key="frame" x="180" y="680" width="214" height="142"/>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="rampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="5R4-g7-alf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xvL-AR-D5h" firstAttribute="trailing" secondItem="dQj-m5-vNI" secondAttribute="trailing" id="EyN-Bo-4MJ"/>
+                            <constraint firstItem="xvL-AR-D5h" firstAttribute="bottom" secondItem="dQj-m5-vNI" secondAttribute="bottom" constant="-34" id="IW7-VC-dd4"/>
+                            <constraint firstItem="dQj-m5-vNI" firstAttribute="top" secondItem="4xl-ii-AkG" secondAttribute="top" id="S9S-7d-b0X"/>
+                            <constraint firstItem="dQj-m5-vNI" firstAttribute="leading" secondItem="xvL-AR-D5h" secondAttribute="leading" id="X2L-WU-mXb"/>
+                            <constraint firstItem="IGT-6d-M6r" firstAttribute="bottom" secondItem="xvL-AR-D5h" secondAttribute="bottom" constant="-40" id="fdI-B1-QW5"/>
+                            <constraint firstItem="xvL-AR-D5h" firstAttribute="trailing" secondItem="IGT-6d-M6r" secondAttribute="trailing" constant="20" id="i0L-TU-9yc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xvL-AR-D5h"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="dQj-m5-vNI" id="EK0-ha-Hbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
+</document>
