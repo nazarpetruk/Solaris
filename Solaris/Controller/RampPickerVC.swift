@@ -35,6 +35,8 @@ class RampPickerVC: UIViewController {
         preferredContentSize = size
         let scene = SCNScene(named: "art.scnassets/PopOverScene.scn")!
         sceneView.scene = scene
+        view.layer.borderColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        view.layer.borderWidth = 3.0
         
         let camera = SCNCamera()
         camera.usesOrthographicProjection = true
@@ -45,17 +47,25 @@ class RampPickerVC: UIViewController {
         
         
         
-        let pipe = Ramp.getPipe()
-        Ramp.rotationAction(node: pipe)
-        scene.rootNode.addChildNode(pipe)
+        let sun = Ramp.getSun()
+        Ramp.rotationAction(node: sun)
+        scene.rootNode.addChildNode(sun)
         
-        let pyramid = Ramp.getPyramid()
-        Ramp.rotationAction(node: pyramid)
-        scene.rootNode.addChildNode(pyramid)
+        let mercury = Ramp.getMercury()
+        Ramp.rotationAction(node: mercury)
+        scene.rootNode.addChildNode(mercury)
         
-        let quarter = Ramp.getQuarter()
-        Ramp.rotationAction(node: quarter)
-        scene.rootNode.addChildNode(quarter)
+        let venus = Ramp.getVenus()
+        Ramp.rotationAction(node: venus)
+        scene.rootNode.addChildNode(venus)
+        
+        let earth = Ramp.getEarth()
+        Ramp.rotationAction(node: earth)
+        scene.rootNode.addChildNode(earth)
+        
+        let mars = Ramp.getMars()
+        Ramp.rotationAction(node: mars)
+        scene.rootNode.addChildNode(mars)
     }
     
     @objc func handleTap (_ gestureRecognizer : UIGestureRecognizer) {
