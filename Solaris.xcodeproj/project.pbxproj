@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F45692323DBF2D8B5AB0126 /* Pods_Solaris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F756654F58CEB7EC8A9A3D /* Pods_Solaris.framework */; };
 		44706342239016DC009CE32E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44706341239016DC009CE32E /* Model.swift */; };
 		44E55201238EB97200FB19DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E55200238EB97200FB19DB /* AppDelegate.swift */; };
 		44E55203238EB97200FB19DB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E55202238EB97200FB19DB /* art.scnassets */; };
-		44E55205238EB97200FB19DB /* RampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E55204238EB97200FB19DB /* RampPlacerVC.swift */; };
+		44E55205238EB97200FB19DB /* PlanetPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E55204238EB97200FB19DB /* PlanetPlacerVC.swift */; };
 		44E55208238EB97200FB19DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E55206238EB97200FB19DB /* Main.storyboard */; };
 		44E5520A238EB97600FB19DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E55209238EB97600FB19DB /* Assets.xcassets */; };
 		44E5520D238EB97600FB19DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44E5520B238EB97600FB19DB /* LaunchScreen.storyboard */; };
-		44E55219238EFAD700FB19DB /* RampPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E55218238EFAD700FB19DB /* RampPickerVC.swift */; };
+		44E55219238EFAD700FB19DB /* PlanetPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E55218238EFAD700FB19DB /* PlanetPickerVC.swift */; };
+		44F064B02396AE2500CA3070 /* LaunchScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F064AF2396AE2500CA3070 /* LaunchScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23D5753F31B0952A0BE6C81E /* Pods-Solaris.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solaris.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Solaris/Pods-Solaris.debug.xcconfig"; sourceTree = "<group>"; };
 		44706341239016DC009CE32E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		44E551FD238EB97200FB19DB /* Solaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44E55200238EB97200FB19DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44E55202238EB97200FB19DB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		44E55204238EB97200FB19DB /* RampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacerVC.swift; sourceTree = "<group>"; };
+		44E55204238EB97200FB19DB /* PlanetPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPlacerVC.swift; sourceTree = "<group>"; };
 		44E55207238EB97200FB19DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44E55209238EB97600FB19DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44E5520C238EB97600FB19DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44E5520E238EB97600FB19DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44E55218238EFAD700FB19DB /* RampPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPickerVC.swift; sourceTree = "<group>"; };
+		44E55218238EFAD700FB19DB /* PlanetPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPickerVC.swift; sourceTree = "<group>"; };
+		44F064AF2396AE2500CA3070 /* LaunchScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenVC.swift; sourceTree = "<group>"; };
+		6F984F61000058BD4BBF2CC8 /* Pods-Solaris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Solaris.release.xcconfig"; path = "Pods/Target Support Files/Pods-Solaris/Pods-Solaris.release.xcconfig"; sourceTree = "<group>"; };
+		B6F756654F58CEB7EC8A9A3D /* Pods_Solaris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Solaris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F45692323DBF2D8B5AB0126 /* Pods_Solaris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D3AF5D5822235915777431F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23D5753F31B0952A0BE6C81E /* Pods-Solaris.debug.xcconfig */,
+				6F984F61000058BD4BBF2CC8 /* Pods-Solaris.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		294BE10BDB646F61B561E9B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F756654F58CEB7EC8A9A3D /* Pods_Solaris.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		44E551F4238EB97200FB19DB = {
 			isa = PBXGroup;
 			children = (
 				44E551FF238EB97200FB19DB /* Solaris */,
 				44E551FE238EB97200FB19DB /* Products */,
+				1D3AF5D5822235915777431F /* Pods */,
+				294BE10BDB646F61B561E9B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +86,10 @@
 		44E551FF238EB97200FB19DB /* Solaris */ = {
 			isa = PBXGroup;
 			children = (
+				44E55200238EB97200FB19DB /* AppDelegate.swift */,
 				44E55217238EBB1F00FB19DB /* View */,
 				44E55216238EBB1700FB19DB /* Model */,
 				44E55215238EBB0C00FB19DB /* Controller */,
-				44E55200238EB97200FB19DB /* AppDelegate.swift */,
 				44E55202238EB97200FB19DB /* art.scnassets */,
 				44E55206238EB97200FB19DB /* Main.storyboard */,
 				44E55209238EB97600FB19DB /* Assets.xcassets */,
@@ -76,8 +102,9 @@
 		44E55215238EBB0C00FB19DB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				44E55204238EB97200FB19DB /* RampPlacerVC.swift */,
-				44E55218238EFAD700FB19DB /* RampPickerVC.swift */,
+				44E55204238EB97200FB19DB /* PlanetPlacerVC.swift */,
+				44E55218238EFAD700FB19DB /* PlanetPickerVC.swift */,
+				44F064AF2396AE2500CA3070 /* LaunchScreenVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -104,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44E55211238EB97600FB19DB /* Build configuration list for PBXNativeTarget "Solaris" */;
 			buildPhases = (
+				6902A4661037FC67DD73C6D3 /* [CP] Check Pods Manifest.lock */,
 				44E551F9238EB97200FB19DB /* Sources */,
 				44E551FA238EB97200FB19DB /* Frameworks */,
 				44E551FB238EB97200FB19DB /* Resources */,
+				9CEA6900E9CAAB00117DBE3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +158,7 @@
 				TargetAttributes = {
 					44E551FC238EB97200FB19DB = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -164,13 +194,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6902A4661037FC67DD73C6D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Solaris-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CEA6900E9CAAB00117DBE3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Solaris/Pods-Solaris-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Solaris/Pods-Solaris-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		44E551F9238EB97200FB19DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E55205238EB97200FB19DB /* RampPlacerVC.swift in Sources */,
-				44E55219238EFAD700FB19DB /* RampPickerVC.swift in Sources */,
+				44E55205238EB97200FB19DB /* PlanetPlacerVC.swift in Sources */,
+				44E55219238EFAD700FB19DB /* PlanetPickerVC.swift in Sources */,
+				44F064B02396AE2500CA3070 /* LaunchScreenVC.swift in Sources */,
 				44E55201238EB97200FB19DB /* AppDelegate.swift in Sources */,
 				44706342239016DC009CE32E /* Model.swift in Sources */,
 			);
@@ -314,6 +384,7 @@
 		};
 		44E55212238EB97600FB19DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D5753F31B0952A0BE6C81E /* Pods-Solaris.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,13 +397,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazarDev.Solaris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		44E55213238EB97600FB19DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F984F61000058BD4BBF2CC8 /* Pods-Solaris.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -345,7 +417,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nazarDev.Solaris;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

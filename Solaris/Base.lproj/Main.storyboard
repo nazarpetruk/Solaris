@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SqX-E9-Usp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -7,10 +7,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ramp PlacerVC-->
+        <!--Launch ScreenVC-->
+        <scene sceneID="Rdz-J1-LHo">
+            <objects>
+                <viewController id="SqX-E9-Usp" customClass="LaunchScreenVC" customModule="Solaris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bw4-PA-Ffs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmosBg2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tes-Kc-ZYw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvl-FA-Kn3">
+                                <rect key="frame" x="117" y="358" width="180" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mars" translatesAutoresizingMaskIntoConstraints="NO" id="ZcZ-E4-HyV" customClass="SpringImageView" customModule="Spring">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="55X-lP-VcZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZcZ-E4-HyV" secondAttribute="trailing" id="azO-if-uss"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZcZ-E4-HyV" secondAttribute="bottom" id="bqG-Zj-AmL"/>
+                                    <constraint firstItem="ZcZ-E4-HyV" firstAttribute="leading" secondItem="gvl-FA-Kn3" secondAttribute="leading" id="dQr-7u-Xuu"/>
+                                    <constraint firstAttribute="width" constant="180" id="rNi-bO-giR"/>
+                                    <constraint firstItem="ZcZ-E4-HyV" firstAttribute="top" secondItem="gvl-FA-Kn3" secondAttribute="top" id="ysM-5x-SXn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tes-Kc-ZYw" firstAttribute="top" secondItem="Bw4-PA-Ffs" secondAttribute="top" id="0AI-JX-cfC"/>
+                            <constraint firstItem="Tes-Kc-ZYw" firstAttribute="trailing" secondItem="WYr-l6-RY8" secondAttribute="trailing" id="eVB-gr-hv1"/>
+                            <constraint firstItem="Tes-Kc-ZYw" firstAttribute="leading" secondItem="WYr-l6-RY8" secondAttribute="leading" id="fFX-gZ-oEk"/>
+                            <constraint firstItem="gvl-FA-Kn3" firstAttribute="centerY" secondItem="Bw4-PA-Ffs" secondAttribute="centerY" id="fYq-b0-yPC"/>
+                            <constraint firstItem="gvl-FA-Kn3" firstAttribute="centerX" secondItem="Bw4-PA-Ffs" secondAttribute="centerX" id="fdK-52-7Dv"/>
+                            <constraint firstAttribute="bottom" secondItem="Tes-Kc-ZYw" secondAttribute="bottom" id="sCr-Lc-Poy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WYr-l6-RY8"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="modal" identifier="toMain" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="J55-c6-HNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaN-8h-9Sr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571.01449275362324" y="135.9375"/>
+        </scene>
+        <!--Planet PlacerVC-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="RampPlacerVC" customModule="Solaris" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="PlanetPlacerVC" customModule="Solaris" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4xl-ii-AkG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -19,10 +78,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGT-6d-M6r">
-                                <rect key="frame" x="287" y="680" width="107" height="142"/>
-                                <state key="normal" image="rampIcon"/>
+                                <rect key="frame" x="314" y="742" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="iUp-fu-Jhu"/>
+                                    <constraint firstAttribute="width" constant="80" id="rji-hx-heH"/>
+                                </constraints>
+                                <state key="normal" image="mars"/>
                                 <connections>
-                                    <action selector="rampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="5R4-g7-alf"/>
+                                    <action selector="planetBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="5R4-g7-alf"/>
                                 </connections>
                             </button>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="x24-r3-xSN">
@@ -73,13 +136,13 @@
                             <constraint firstItem="dQj-m5-vNI" firstAttribute="top" secondItem="4xl-ii-AkG" secondAttribute="top" id="S9S-7d-b0X"/>
                             <constraint firstItem="dQj-m5-vNI" firstAttribute="leading" secondItem="xvL-AR-D5h" secondAttribute="leading" id="X2L-WU-mXb"/>
                             <constraint firstItem="xvL-AR-D5h" firstAttribute="bottom" secondItem="x24-r3-xSN" secondAttribute="bottom" constant="39" id="XxB-SU-V9Q"/>
-                            <constraint firstItem="IGT-6d-M6r" firstAttribute="bottom" secondItem="xvL-AR-D5h" secondAttribute="bottom" constant="-40" id="fdI-B1-QW5"/>
-                            <constraint firstItem="IGT-6d-M6r" firstAttribute="leading" secondItem="x24-r3-xSN" secondAttribute="trailing" constant="10" id="heP-jJ-SFC"/>
-                            <constraint firstItem="xvL-AR-D5h" firstAttribute="trailing" secondItem="IGT-6d-M6r" secondAttribute="trailing" constant="20" id="i0L-TU-9yc"/>
                             <constraint firstItem="x24-r3-xSN" firstAttribute="leading" secondItem="xvL-AR-D5h" secondAttribute="leading" constant="20" id="oGb-ED-ZDE"/>
+                            <constraint firstItem="xvL-AR-D5h" firstAttribute="trailing" secondItem="IGT-6d-M6r" secondAttribute="trailing" constant="20" id="q9e-eq-k0n"/>
+                            <constraint firstItem="xvL-AR-D5h" firstAttribute="bottom" secondItem="IGT-6d-M6r" secondAttribute="bottom" constant="40" id="w4X-JP-MOG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xvL-AR-D5h"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M2G-Xe-2wO"/>
                     <connections>
                         <outlet property="BtnStackView" destination="x24-r3-xSN" id="XAW-nh-TuK"/>
                         <outlet property="downBtn" destination="oyA-Ay-UDH" id="P4P-hr-u4J"/>
@@ -94,8 +157,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cosmosBg2.jpg" width="640" height="1136"/>
         <image name="downArrow" width="32" height="32"/>
-        <image name="rampIcon" width="107" height="71"/>
+        <image name="mars" width="512" height="512"/>
         <image name="removeButton" width="32" height="32"/>
         <image name="rotateButton" width="32" height="32"/>
         <image name="upArrow" width="32" height="32"/>
