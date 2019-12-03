@@ -37,7 +37,7 @@ class PlanetPickerVC: UIViewController {
         let scene = SCNScene(named: "art.scnassets/PopOverScene.scn")!
         sceneView.scene = scene
         view.layer.borderColor = #colorLiteral(red: 0.4438803196, green: 0.204872638, blue: 0.2166426182, alpha: 1)
-        view.layer.borderWidth = 3.0
+        view.layer.borderWidth = 6.0
         view.layer.masksToBounds = true
         
         let camera = SCNCamera()
