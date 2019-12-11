@@ -65,6 +65,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4415B6DF23A115BF00ECC5BE /* StroryBoard&Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				44E55209238EB97600FB19DB /* Assets.xcassets */,
+				44E55206238EB97200FB19DB /* Main.storyboard */,
+				44E5520B238EB97600FB19DB /* LaunchScreen.storyboard */,
+			);
+			path = "StroryBoard&Launcher";
+			sourceTree = "<group>";
+		};
 		44E551F4238EB97200FB19DB = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				44E55200238EB97200FB19DB /* AppDelegate.swift */,
-				44E55217238EBB1F00FB19DB /* View */,
 				44E55216238EBB1700FB19DB /* Model */,
+				44E55217238EBB1F00FB19DB /* View */,
 				44E55215238EBB0C00FB19DB /* Controller */,
-				44E55202238EB97200FB19DB /* art.scnassets */,
-				44E55206238EB97200FB19DB /* Main.storyboard */,
-				44E55209238EB97600FB19DB /* Assets.xcassets */,
-				44E5520B238EB97600FB19DB /* LaunchScreen.storyboard */,
+				4415B6DF23A115BF00ECC5BE /* StroryBoard&Launcher */,
 				44E5520E238EB97600FB19DB /* Info.plist */,
 			);
 			path = Solaris;
@@ -120,6 +127,7 @@
 		44E55217238EBB1F00FB19DB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44E55202238EB97200FB19DB /* art.scnassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
